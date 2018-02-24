@@ -1,0 +1,250 @@
+@charset "utf-8";
+/*pc*/
+* {
+    font-family: "微软雅黑";
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: #ffffff;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-size: 12px;
+}
+
+div, ul, li, p, form, h1, h2, h3, h4, h5, input, dl, dt, dd, fieldset, table, tr, td {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, textarea {
+    vertical-align: middle;
+    outline: none;
+}
+
+input[type='button'],input[type='submit']{
+    border: none;
+    cursor: pointer;
+}
+
+/*ie6定位闪动*/
+* html {
+    background-image: url(about:blank);
+    background-attachment: fixed;
+}
+
+a, a:active, a:visited, a:focus {
+    color: #333;
+}
+
+.no-br {
+    border-right: none !important;
+}
+
+.no-bl {
+    border-left: none !important;
+}
+
+.no-bt {
+    border-top: none !important;
+}
+
+.no-bb {
+    border-bottom: none !important;
+}
+
+.no-bg {
+    background: none !important;
+}
+
+.no-line {
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.c-line{
+    text-decoration: line-through;
+}
+
+.xi {
+    font-weight: normal;
+}
+
+.cu {
+    font-weight: bold;
+}
+
+.cu600 {
+    font-weight: 600;
+}
+
+.t-l {
+    text-align: left;
+}
+
+.t-c {
+    text-align: center;
+}
+
+.t-r {
+    text-align: right;
+}
+
+.no-sty {
+    font-style: normal;
+}
+
+.c333 {
+    color: #333;
+}
+
+.c666 {
+    color: #666;
+}
+
+.c999 {
+    color: #999;
+}
+
+.cfff {
+    color: #fff;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.inlink-block {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.fix {
+    position: fixed;
+}
+
+.visible {
+    visibility: hidden;
+}
+
+.hidden {
+    overflow-y: hidden;
+}
+
+.no-mr {
+    margin-right: 0 !important;
+}
+
+.no-ml {
+    margin-left: 0 !important;
+}
+
+.no-mt {
+    margin-top: 0 !important;
+}
+
+.no-mb {
+    margin-bottom: 0 !important;
+}
+
+.no-pr {
+    margin-right: 0 !important;
+}
+
+.no-pl {
+    margin-left: 0 !important;
+}
+
+.no-pt {
+    margin-top: 0 !important;
+}
+
+.no-pb {
+    margin-bottom: 0 !important;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*自动折行*/
+.auto-br {
+    white-space: nowrap;
+}
+
+/*字母数字折行*/
+.break-br {
+    word-wrap: break-word;
+}
+
+/*省略号*/
+.dot{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

@@ -1,0 +1,120 @@
+.content{width: 100%;min-width:1200px;height:auto;color: #ffffff;font-size: 16px;position: absolute;}
+.con_main{width:100%;}
+/*title 部分*/
+.con_main .main_title{width: 96%;height: 120px;background:#373d41;font-size: 30px;padding: 0 2%;}
+.con_main .main_title_icon{width:240px;height: 120px;background: #fff;float: left;}
+.con_main .main_title_icon img{width: 100%;height: 100%;}
+.con_main .main_title_text{height:40px;float: right;margin-top: 78px;font-size: 30px;}
+.con_main .main_title_text ul{height:40px;float: right;}
+.con_main .main_title_text ul li{height:40px;margin-left:20px;line-height: 40px;float: left;cursor: pointer;}
+.active{border-bottom: 2px solid #00c1de}
+
+
+/*product swiper轮播图部分*/
+.con_main .shouye{width: 100%;min-width:1200px;background:#f5f5f6;}
+.main_product{width: 100%;height: 640px;}
+.main_product .product{}
+.main_product .product  .product_img {}
+.main_product .product  .product_img img{width: 100%;height: 100%;}
+.next_img,.prev_img{width: 100px;height: 100px;}
+.next_img img,.prev_img img{width: 100%;height: 100%;}
+/*首页的文字部分*/
+.main_text{width: 100%;text-align: center;line-height: 40px;padding: 64px 0;background: #fff;}
+.main_text .main_text_one{width: 100%;margin:0 auto;text-align: center;font-size: 30px;color: #373d41;}
+.main_text .main_text_two{width: 100%;margin:0 auto;text-align: center;font-size: 22px;color: #666;border-bottom: 1px solid #00c1de;}
+
+
+/*首页的product_show 部分*/
+.title_some{width: 100%;  float: left;cursor: pointer;}
+.product_show{width: 100%;background:rgba(204, 204, 204, 0.58);margin: 10px 0;background: #fff;}
+.show_mubei{width: 100%;height:50px;line-height:50px;font-size: 24px;text-align: center;background: #373d41;margin: 10px 0;}
+.product_show .show_image{width: 100%;}
+.show_image ul{width: 1200px;overflow: hidden;margin: 0 auto;}
+.show_image ul li{width: 300px;height: 360px;float: left;}
+.show_image ul .li_img{width: 294px;height: 360px;position: relative;border: 1px solid #fff;}
+.show_image ul .li_img img{width: 100%;height: 100%;}
+.show_image ul .li_img .li_text{width: 86%;height: 70%;border-radius: 100%;position: absolute;left: 16px; bottom: 61px;opacity: 0;z-index: 99;background-color: rgba(0,0,0,0.3)}
+.li_text_con{width:105px;height:100px;top: 70%;left: 81%;margin-top: -50%;margin-left: -50%;position: absolute;}
+.li_text_con .text_span{font-size: 20px;}
+.li_text_con .span_more_text{overflow : hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;}
+/*关于我们 about*/
+.about{width: 100%;min-width:1200px;background:rgba(204, 204, 204, 0.44);display: none;}
+.main_title_con{float: left;}
+/*除首页外的所有banner样式*/
+.about_main,.case_main,.news_main,.contact_main{width:100%;height: 100%;}
+.about_main_banner,.case_main_banner,.news_main_banner,.contact_main_banner{width:100%;height: 400px;}
+.about_main_banner img,.case_main_banner img,.news_main_banner img,.contact_main_banner img{width: 100%;height: 100%;}
+.about_main_content{width: 1200px;min-width: 1200px;padding: 30px 0;margin: 0 auto;}
+.about_main_content .about_main_content_left{width: 22%;float: left;background: #f5f5f6;border: dashed 2px #ccc;border-radius: 20px;}
+.about_main_content_left .left_top{width: 100%;height: 40%;cursor: pointer;float: left;}
+.about_main_content_left .left_down{width: 100%;height: 60%;color: #333;float: left;}
+.about_main_content_left .left_down h4{margin: 30px;}
+.qinfen_img{border-radius: 50%;margin: 33px 50px;}
+.qinfen_img img{width: 100%;height: 100%;}
+.content_left_title{width:100%;height: 100%;position: relative;float: left;}
+.content_left_block{width: 10px;height: 10px;background: #333;position: absolute;}
+.content_left_block_a{top: 38px;left: 22px;}
+.content_left_block_b{top: 38px;left: 22px;}
+.content_left_block_c{top: 36px;left: 22px;}
+.content_left_block_bgc{background:#00c1de;}
+.l_Company_about{border-bottom: solid 1px #666;color: #333;margin: 22px 40px;}
+.l_Company_profile_color{color: #00c1de}
+.about_main_content .about_main_content_right{width:77%;float: right;margin-left: 5px;color: #333;}
+.content_right_profile,.content_right_team,.content_right_business{padding: 2%;width: 96%;background: #fff;border-radius: 4px;float: left;}
+.content_right_profile p,.content_right_business p{line-height: 27px;margin-top: 10px;text-indent: 25px;}
+.content_right_profile_img{}
+
+.team_img{width: 438px;height: 450px;margin:15px 2px;float: left;}
+.team_img img{width: 100%;height: 100%;}
+/*经典案例部分*/
+.case{width: 100%;display: none;background: #fff;}
+.case_content{width: 100%;min-height: 600px;}
+.case_title{width: 100%;height: 80px;line-height: 80px;font-size: 26px;background: #373d41;text-align: center;}
+.case_content_img{width: 1200px;display:flex;flex-wrap:wrap;margin: 10px auto;}
+.case_content_img .case_content_text{width: 368px;height: 330px;padding: 15px;border: solid 1px #333;}
+.case_content_img .case_content_text img{width: 100%;height:100%;}
+/*行业新闻部分*/
+.news{width: 100%;display: none;float: left;color: #333;}
+.news_text{width: 1200px;height: 80px;line-height: 80px;color: #666;margin: 10px auto;text-align: center;font-size: 30px;border-bottom: 1px solid #ccc;}
+.news_main_list{width: 100%;float: left;}
+.news_main_list .news_list_details {width: 1200px;min-width:1200px;height:100%;margin: 10px auto;}
+.news_main_list .news_list_details .list_details_top{width:98%;height:250px;padding: 1%;}
+.list_details_top .list_details_top_img {width:250px;height:250px;float: left;}
+.list_details_top .list_details_top_img img{width:100%;height:100%;}
+.list_details_top .list_details_top_text {width:800px;height:250px;float: left;margin-left:20px;}
+
+/*联系我们部分*/
+.contact{width: 100%;color:#333;font-size:22px;display: none;}
+.contact_main_down{width: 1200px;min-width:1200px;min-height: 600px;margin: 15px auto;text-align: center;position: relative;}
+.contact_main_map{width: 600px;  height: 400px;  position: absolute;  left: 50%;  top: 30%;  margin-left: -300px;  margin-top: -16px;}
+.contact_main_map img{width:100%;height: 100%;}
+
+/*底部*/
+.con_main .main_footer{width: 100%;height: 200px;background:#373d41;float: left;}
+.main_footer .footer_con{width: 1200px;min-width:1200px;height: 160px;background:#373d41;margin: 0 auto;padding: 20px 0;}
+.footer_con div{float: left;}
+.footer_con .footer_title{width: 33.33%;background:#373d41;}
+.footer_con .footer_title .footer_title_txt{width: 90%;border-bottom: 1px solid #ccc;margin: 0 10% 0 0;}
+.footer_con .footer_title .footer_title_txt .footer_title_txt_a{float: left;}
+.footer_con .footer_title .footer_title_txt .footer_title_txt_b{float: right;}
+.footer_title .footer_title_adress{margin-top: 35px;}
+.footer_title .footer_title_phone{margin-top: 30px;}
+.footer_title a{display: block;width: 100px;height: 40px;float: left;color: #fff;margin-top: 10px;}
+.footer_title .jlt{width:32px;height:32px;background-image: url(http://htds.oss-cn-beijing.aliyuncs.com/icons_jlt.png);background-repeat: no-repeat;cursor: pointer;margin: 6px 6px 6px 0;overflow: hidden;top: 0;left: 0;}
+.footer_title .jlt_qzone{background-position:0 -52px;}
+.footer_title .jlt_weixin{background-position:0 -1612px;}
+.footer_title .jlt_xinlang{background-position:0 -104px;}
+.footer_title .jlt_tengxun{background-position:0 -260px;}
+.footer_title .jlt_renrenwang{background-position:0 -208px;}
+
+.banquan{width: 100%;height:40px;float: left;background: #373d41;margin-top: 10px;}
+.footer_banquan{width: 1200px;height: 40px;line-height:40px;margin: 0 auto;text-align: center;color: #fff;}
+/*二维码*/
+.erweima{position: fixed;width: 100px;height: 122px;z-index: 11111;top: 150px;right: 100px;background: #fff;}
+.erweima_img{width: 100px;height: 100px;}
+.erweima_img img{width: 100%;height: 100%;}
+.erweima_txt{width: 100px;height: 22px;line-height: 20px;text-align: center;color: #333;font-size: 20px;}
+@media screen and (max-width: 900px) {
+    .prev_img{display: none;}
+    .next_img{display: none;}
+}
