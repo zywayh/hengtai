@@ -4,97 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <title></title>
-    <link rel="stylesheet" href="//cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+    <!-- <link rel="stylesheet" href="//cdn.bootcss.com/weui/0.4.3/style/weui.min.css"> -->
 </head>
 <body>
-<div class="page">
-    <div class="card_border">
-        <div class="weui-cells weui-cells_form">
-            <div class="weui-cell">
-                <div class="weui-cell__bd">
-                    <div class="weui-uploader">
-                        <div class="weui-uploader__hd">
-                            <p class="weui-uploader__title">身份证证件照</p>
-                        </div>
-                        <div class="weui-uploader__bd">
-                            <!--<ul class="weui-uploader__files" id="uploaderFiles">-->
-                            <!--<li class="weui-uploader__file" style="background-image:url(image/main/anli002.jpg)"></li>-->
-                            <!--<li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>-->
-                            <!--<li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>-->
-                            <!--<li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(./images/pic_160.png)">-->
-                            <!--<div class="weui-uploader__file-content">-->
-                            <!--<i class="weui-icon-warn"></i>-->
-                            <!--</div>-->
-                            <!--</li>-->
-                            <!--<li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(./images/pic_160.png)">-->
-                            <!--<div class="weui-uploader__file-content">50%</div>-->
-                            <!--</li>-->
-                            <!--</ul>-->
-                            <div class="weui-uploader__input-box"style="height: 100%;width: 100%;position: absolute;">
-                                <input id="dd" class="Fileupload" type="file" accept="image/*" style="opacity: 0;width: 100%;height: 100%;">
-                                <img src="image/main/anli002.jpg" alt=""/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="loadingToast" style="display:none;">
-    <div class="weui-mask_transparent"></div>
-    <div class="weui-toast">
-        <i class="weui-loading weui-icon_toast"></i>
-        <p class="weui-toast__content">图片上传中</p>
-    </div>
+<button class="btn">按钮</button>
+<div class="page" style="display: none;">
+   朱亚伟是^(*￣(oo)￣)^
 </div>
 </body>
 
-<script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/weui.min.js"></script>
-<script src="js/ajaxfileupload.js"></script>
-<script src="js/uploadFile.js"></script>
-<script type="javascript">
-    $("input[type='file']").change(function () {
-
-    });
-//    $("input[type='file']").change(function() {
-//        var $loadingToast = $('#loadingToast');
-//        var _this = $(this);
-//        var imgs = _this.next();
-//        if ($loadingToast.css('display') != 'none') return;
-//        $loadingToast.fadeIn();
-//        var files = $(this).prop('files');//获取到文件列表
-//        if(files.length > 0){
-//            var s = files[0].name.substring(files[0].name.lastIndexOf("."))
-//            var storeAs;
-//            if(s > 1){
-//                storeAs = uUID() + s[s.length-1];
-//            }else{
-//                storeAs = uUID() + ".png";
-//            }
-//            client.multipartUpload(storeAs, files[0]).then(function (result) {
-//                var filePath = "http://lvdianwechatwatch.oss-cn-qingdao.aliyuncs.com/"+result.name
-//                console.log(filePath)
-//                console.log(result)
-//
-//                console.log(_this.data('id') + "----" + filePath);
-//                if(_this.data('id') == '0') {
-//                    img_url = filePath;
-//                } else {
-//                    img_urlT = filePath;
-//                }
-//                console.log(_this.next())
-////                alert(date)
-//                $loadingToast.fadeOut();
-//                imgs[0].src = filePath+"?x-oss-process=image/resize,w_200";
-//
-//            }).catch(function (err) {
-//                console.log(err);
-//                alert("失败");
-//            });
-//        }
-//    });
-
+<script src="js/jquery-3.2.1.js"></script>
+<!-- <script src="js/weui.min.js"></script> -->
+<script type="text/javascript">
+   $(function(){
+   		$(".btn").click(function(){
+   			$(".page").toggle();
+   		})
+   })
 </script>
 </html>
