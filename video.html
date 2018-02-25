@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+	捉妖记2 : <div class="prism-player" id="J_prismPlayer"></div>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.4.0/aliplayer-h5-min.js"></script>
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.4.0/skins/default/aliplayer-min.css" />
+	<script type="text/javascript">
+	    new Aliplayer({
+	        id: 'J_prismPlayer',
+	        width: '100%',
+	        autoplay: false,
+	        //支持播放地址播放,此播放优先级最高
+	        source : "http://video.hengtaids.com/1f0619d855b547298e004c6e80da36e5/0de07f23e93b4e4fb58da7f158b38a56-a782d51b636e9330cdfbb0e0c3821d6f-od-S00000001-200000.mp4"
+	    },function(player){
+	        console.log('播放器创建好了。')
+	    });
+
+
+
+
+	</script>
+</body>
+</html>
