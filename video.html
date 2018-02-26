@@ -3,15 +3,23 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <style type="text/css">
+		button{width: 100%; height: 80px;}
+    </style>
 </head>
 <body>
 	捉妖记2 : <div class="prism-player" id="J_prismPlayer"></div>
+	<button class="ali1">捉妖记2全屏</button>
 	女儿国  : <div class="prism-player" id="J_prismPlayer1"></div>
+	<button class="ali2">女儿国全屏</button>
+	唐人街探案2  : <div class="prism-player" id="J_prismPlayer2"></div>
+	<button class="ali3">唐人街探案2全屏</button>
+
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.4.0/aliplayer-h5-min.js"></script>
     <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.4.0/skins/default/aliplayer-min.css" />
 	<script type="text/javascript">
-	    new Aliplayer({
+	    var ali1= new Aliplayer({
 	        id: 'J_prismPlayer',
 	        width: '100%',
 	        autoplay: false,
@@ -21,7 +29,7 @@
 	        console.log('播放器创建好了。')
 	    });
 
-	    new Aliplayer({
+	    var ali2 = new Aliplayer({
 	        id: 'J_prismPlayer1',
 	        width: '100%',
 	        autoplay: false,
@@ -29,6 +37,47 @@
 	        source : "http://video.hengtaids.com/623cc645553742f990f34637bb895db6/eca1fa2d0889449d85b430dbb46b5a9b-1d77538ca63023e23901b28d215b9c0c-ld.mp4"
 	    },function(player){
 	        console.log('播放器创建好了。')
+	    });
+
+	    var ali3 = new Aliplayer({
+	        id: 'J_prismPlayer2',
+	        width: '100%',
+	        autoplay: false,
+	        //支持播放地址播放,此播放优先级最高
+	        source : "http://video.hengtaids.com/c29ab0c1b2484dc7ac65033bcfb812ae/14c8aaa287764549aff00d20400c9fef-661a4e3de63eaafd004ee033f24222f1-ld.mp4"
+	    },function(player){
+	        console.log('播放器创建好了。')
+	    });
+
+	    ali1.on('play',function(e) {
+    		ali2.pause();
+    		ali3.pause();
+		});
+ 	    ali2.on('play',function(e) {
+    		ali1.pause();
+    		ali3.pause();
+		});
+ 	    ali3.on('play',function(e) {
+    		ali1.pause();
+    		ali2.pause();
+		});
+
+	    $(function(){
+	    	$(".ali1").click(function(){
+	    		ali1.fullscreenService.requestFullScreen();
+	    		ali2.pause();
+	    		ali3.pause();
+	    	});
+	    	$(".ali2").click(function(){
+	    		ali2.fullscreenService.requestFullScreen();
+	    		ali1.pause();
+	    		ali3.pause();
+	    	});
+	    	$(".ali3").click(function(){
+	    		ali3.fullscreenService.requestFullScreen();
+	    		ali1.pause();
+	    		ali2.pause();
+	    	});
 	    });
 
 
