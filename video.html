@@ -16,6 +16,8 @@
 	<button class="ali3">唐人街探案2全屏</button>
 	红海行动  : <div class="prism-player" id="J_prismPlayer3"></div>
 	<button class="ali3">红海行动</button>
+	祖宗十九代: <div class="prism-player" id="J_prismPlayer4"></div>
+	<button class="ali4">祖宗十九代</button>
 
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.4.0/aliplayer-h5-min.js"></script>
@@ -26,7 +28,7 @@
 	        width: '100%',
 	        autoplay: false,
 	        //支持播放地址播放,此播放优先级最高
-	        source : "http://video.hengtaids.com/1f0619d855b547298e004c6e80da36e5/0de07f23e93b4e4fb58da7f158b38a56-532e6a3d0c0aaa704d7cd80032874476-ld.mp4"
+	        source : "http://zyw-video.oss-cn-beijing.aliyuncs.com/1.mp4"
 	    },function(player){
 	        console.log('播放器创建好了。')
 	    });
@@ -36,7 +38,7 @@
 	        width: '100%',
 	        autoplay: false,
 	        //支持播放地址播放,此播放优先级最高
-	        source : "http://video.hengtaids.com/623cc645553742f990f34637bb895db6/eca1fa2d0889449d85b430dbb46b5a9b-1d77538ca63023e23901b28d215b9c0c-ld.mp4"
+	        source : "http://zyw-video.oss-cn-beijing.aliyuncs.com/4.mp4"
 	    },function(player){
 	        console.log('播放器创建好了。')
 	    });
@@ -46,39 +48,61 @@
 	        width: '100%',
 	        autoplay: false,
 	        //支持播放地址播放,此播放优先级最高
-	        source : "http://video.hengtaids.com/c29ab0c1b2484dc7ac65033bcfb812ae/14c8aaa287764549aff00d20400c9fef-661a4e3de63eaafd004ee033f24222f1-ld.mp4"
+	        source : "http://zyw-video.oss-cn-beijing.aliyuncs.com/2.mp4"
 	    },function(player){
 	        console.log('播放器创建好了。')
 	    });
+
 	    var ali4 = new Aliplayer({
-	        id: 'J_prismPlayer2',
+	        id: 'J_prismPlayer3',
 	        width: '100%',
 	        autoplay: false,
 	        //支持播放地址播放,此播放优先级最高
-	        source : "http://video.hengtaids.com/2183a902f3b4417988cc23aea37b3f48/feb6b847a1754f1e8d7065460b3eb296-dfd9be00de56a61408d167b4fb5ddd2d-ld.mp4"
+	        source : "http://zyw-video.oss-cn-beijing.aliyuncs.com/5.mp4"
 	    },function(player){
 	        console.log('播放器创建好了。')
 	    });
+
+	    var ali5 = new Aliplayer({
+	        id: 'J_prismPlayer4',
+	        width: '100%',
+	        autoplay: false,
+	        source : "http://zyw-video.oss-cn-beijing.aliyuncs.com/3.mp4"
+	    },function(player){
+	        console.log('播放器创建好了。')
+	    });
+
+	    
 
 	    ali1.on('play',function(e) {
     		ali2.pause();
     		ali3.pause();
     		ali4.pause();
+    		ali5.pause();
 		});
  	    ali2.on('play',function(e) {
     		ali1.pause();
     		ali3.pause();
     		ali4.pause();
+    		ali5.pause();
 		});
  	    ali3.on('play',function(e) {
     		ali1.pause();
     		ali2.pause();
     		ali4.pause();
+    		ali5.pause();
 		});
  	    ali4.on('play',function(e) {
     		ali1.pause();
     		ali2.pause();
     		ali3.pause();
+    		ali5.pause();
+		});
+ 	    ali5.on('play',function(e) {
+    		ali1.pause();
+    		ali2.pause();
+    		ali3.pause();
+    		ali4.pause();
 		});
 
 	    $(function(){
@@ -87,24 +111,35 @@
 	    		ali2.pause();
 	    		ali3.pause();
 	    		ali4.pause();
+	    		ali5.pause();
 	    	});
 	    	$(".ali2").click(function(){
 	    		ali2.fullscreenService.requestFullScreen();
 	    		ali1.pause();
 	    		ali3.pause();
 	    		ali4.pause();
+	    		ali5.pause();
 	    	});
 	    	$(".ali3").click(function(){
 	    		ali3.fullscreenService.requestFullScreen();
 	    		ali1.pause();
 	    		ali2.pause();
 	    		ali4.pause();
+	    		ali5.pause();
 	    	});
 	    	$(".ali4").click(function(){
 	    		ali4.fullscreenService.requestFullScreen();
 	    		ali1.pause();
 	    		ali2.pause();
 	    		ali3.pause();
+	    		ali5.pause();
+	    	});
+	    	$(".ali5").click(function(){
+	    		ali5.fullscreenService.requestFullScreen();
+	    		ali1.pause();
+	    		ali2.pause();
+	    		ali3.pause();
+	    		ali4.pause();
 	    	});
 	    });
 
